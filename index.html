@@ -1,65 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A free college website built using HTML and CSS.">
-  <title>Embedded College Website</title>
-  <link rel="stylesheet" href="style.css">
-  <style>
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bachelor's Life</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
 <body>
-  <!-- Container to isolate blog content -->
-  <div id="college-website-container">
-    <!-- Header Section -->
-    <header id="college-header">
-      <h1>My College</h1>
-      <nav>
-        <ul>
-          <li><a href="#college-hero">Home</a></li>
-          <li><a href="#college-about">About</a></li>
-          <li><a href="#college-courses">Courses</a></li>
-          <li><a href="#college-contact">Contact</a></li>
-        </ul>
-      </nav>
+    <header>
+        <nav>
+            <ul>
+                <li class="selected"><a href="#about">O nás</a></li>
+                <li><a href="#overview">Prehľad</a></li>
+                <li><a href="#diary">Denník</a></li>
+                <li><a href="#work">Práca</a></li>
+                <li><a href="#sources">Zdroje</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section id="college-hero">
-      <h2>Welcome to My College</h2>
-      <p>Your journey to success starts here!</p>
-    </section>
-
-    <!-- About Section -->
-    <section id="college-about">
-      <h2>About Us</h2>
-      <p>We are dedicated to providing quality education and nurturing talent.</p>
-    </section>
-
-    <!-- Courses Section -->
-    <section id="college-courses">
-      <h2>Our Courses</h2>
-      <ul>
-        <li>Bachelor of Science (B.Sc.)</li>
-        <li>Bachelor of Arts (B.A.)</li>
-        <li>Master of Business Administration (MBA)</li>
-        <li>PhD Programs</li>
-      </ul>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="college-contact">
-      <h2>Contact Us</h2>
-      <p>Email: info@mycollege.com</p>
-      <p>Phone: +1 (123) 456-7890</p>
-      <p>Address: 123 College Lane, Education City, USA</p>
-    </section>
-
-    <!-- Footer Section -->
-    <footer id="college-footer">
-      <p>© 2024 My College. All Rights Reserved.</p>
-    </footer>
-  </div>
+    <main>
+        <div class="main-title">
+            <h3>Bakalárska práca</h3>
+            <h1 id="work-title"></h1>
+        </div>
+        <section id="about" class="wrapper" data-title="About Me">
+            <h2>O nás</h2>
+<!--            <p><strong>Autor:</strong> <span id="student-name"></span></p>-->
+<!--            <p><strong>Email:</strong> <span id="email"></span></p>-->
+<!--            <p><strong>Názov:</strong> <span id="work-title2"></span></p>-->
+<!--            <p><strong>Školiteľ:</strong> <span id="supervisor-name"></span></p>-->
+            <div class="info">
+                <div class="info-item">
+                    <span class="label">Autor:</span>
+                    <div id="student-name"></div>
+                </div>
+                <div class="info-item">
+                    <span class="label">Email:</span>
+                    <div id="email"></div>
+                </div>
+                <div class="info-item">
+                    <span class="label">Školiteľ:</span>
+                    <div id="supervisor-name"></div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="overview" class="wrapper">
+            <h2>Prehľad</h2>
+            <p>Email: <span id="email2"></span></p>
+            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
+            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
+            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
+            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
+            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
+            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
+            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
+        </section>
+        
+        <section id="diary" class="wrapper">
+            <h2>Denník</h2>
+            <p id="annotation"></p>
+            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
+            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
+            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
+            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
+            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
+            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
+            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
+        </section>
+        
+        <section id="work" class="wrapper">
+            <h2>Práca</h2>
+            <p id="goal"></p>
+            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
+            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
+            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
+            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
+            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
+            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
+            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
+        </section>
+        
+        <section id="sources" class="wrapper">
+            <h2>Zdroje</h2>
+            <div id="sources-list"></div>
+            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
+            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
+            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
+            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
+            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
+            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
+            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
+        </section>
+    </main>
 </body>
 </html>

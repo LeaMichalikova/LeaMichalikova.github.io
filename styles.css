@@ -1,0 +1,164 @@
+@import url('https://fonts.googleapis.com/css2?family=Bitter&family=Merriweather&display=swap');
+
+:root {
+    --clr-grad-1: #1559F5;
+    --clr-grad-2: #072D82;
+	--clr-bg-main: #031439;
+	--clr-bg-section: #072D92;
+	--clr-side-text: #bacfff;
+
+    --clr-blue0: #BACFFF;
+	--clr-blue1: #467EFE;
+	--clr-blue2: #1559F5;
+	--clr-blue3: #0641C8;
+	--clr-blue4: #072D82;
+	--clr-blue5: #031439;	
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--clr-bg-main);
+    text-align: center;
+}
+header {
+    background: linear-gradient(var(--clr-grad-1), var(--clr-grad-2));
+    color: white;
+    padding: 0px 0;
+
+    /*gpt bs*/
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+main {
+    padding-top: 80px;
+    /*gpt bs*/
+}
+header h1 {
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 10px;
+    word-wrap: break-word;
+}
+header h3 {
+    font-weight: normal;
+    margin: 5px 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+nav ul li a {
+	color: var(--clr-side-text);
+    transition: color 0.3s ease-in-out;
+    text-decoration: none;
+    font-weight: bold;
+    font-family: 'Merriweather', serif;
+}
+
+/* Styles for larger screens (PC) */
+@media screen and (min-width: 806px) {
+    nav ul {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+    }
+    nav ul li a {
+        font-size: 20px;
+        padding: 15px 20px;
+    }
+    header {
+        padding: 5px 0;
+    }
+}
+
+
+nav ul li.selected a {
+    color: white;
+    text-shadow: 0 0 8px var(--clr-blue1);
+
+    /*underline*/
+    /*border-bottom: 3px solid var(--clr-blue1);*/
+    /*padding-bottom: 2px;*/
+}
+div h3 {
+	color: var(--clr-side-text);
+	text-transform: uppercase;
+}
+.wrapper {
+    max-width: 800px;
+    margin: 60px auto 20px; /* Extra top margin for spacing */
+    padding: 20px;
+    background: var(--clr-bg-section);
+    border-radius: 0 10px 10px 10px;
+    text-align: left;
+    color: white;
+    border: 1px solid var(--clr-blue1);
+    position: relative; /* Needed for pseudo-element positioning */
+}
+
+/* Folder Tab Effect */
+.wrapper::before {
+    content: "";
+    position: absolute;
+    top: -35.5px;
+    left: -1px;
+    width: 200px;
+    height: 35px;
+    background: var(--clr-bg-section);
+	border: 1px solid var(--clr-blue1);
+    border-top-left-radius: 8px;
+    border-top-right-radius: 5px;
+	border-bottom-width: 0;
+}
+
+.wrapper h2 {
+    position: absolute;
+    top: -30.5px;
+}
+
+/* Make the section titles stand out */
+section h2 {
+	color: var(--clr-side-text);
+    margin-top: 5px; /* Adjust for pseudo-element spacing */
+}
+.main-title {
+    margin: 20px auto;
+    max-width: 800px;
+    padding: 5px 20px;
+	color: white;
+}
+
+/*gpt stuff for o nas*/
+/* Styles for the info section */
+.info {
+    margin-top: 20px;
+    text-align: left;
+}
+.info-item {
+    margin-bottom: 15px; /* Space between the info items */
+}
+.label {
+    font-weight: bold;
+    font-style: italic;
+    display: block; /* Ensures the label is on its own line */
+}
+
+#student-name, #email, #instagram {
+
+}
+
+#sources-list {
+}
+
