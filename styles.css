@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Bitter&family=Merriweather&display=swap');
 
 :root {
-    --clr-grad-1: #1559F5;
-    --clr-grad-2: #072D82;
-	--clr-bg-main: #031439;
-	--clr-bg-section: #072D92;
-	--clr-side-text: #bacfff;
+    --clr-grad-1: #1559F5; /*2*/
+    --clr-grad-2: #072D82; /*4*/
+	--clr-bg-main: #031439; /*5*/
+	--clr-bg-section: #072D92; /*4*/
+	--clr-side-text: #BACFFF; /*0*/
 
     --clr-blue0: #BACFFF;
 	--clr-blue1: #467EFE;
@@ -20,25 +20,21 @@ html {
 }
 body {
     font-family: 'Merriweather', serif;
+    line-height: 1.5;
     margin: 0;
-    padding: 0;
+    padding: 50px 0 0;
     background-color: var(--clr-bg-main);
     text-align: center;
 }
+
 header {
     background: linear-gradient(var(--clr-grad-1), var(--clr-grad-2));
     color: white;
     padding: 0px 0;
-
-    /*gpt bs*/
     position: fixed;
     width: 100%;
     top: 0;
     z-index: 1000;
-}
-main {
-    padding-top: 80px;
-    /*gpt bs*/
 }
 header h1 {
     max-width: 80%;
@@ -67,8 +63,7 @@ nav ul li a {
     font-family: 'Merriweather', serif;
 }
 
-/* Styles for larger screens (PC) */
-@media screen and (min-width: 806px) {
+@media screen and (min-width: 810px) {
     nav ul {
         display: flex;
         justify-content: center;
@@ -82,15 +77,9 @@ nav ul li a {
         padding: 5px 0;
     }
 }
-
-
 nav ul li.selected a {
     color: white;
     text-shadow: 0 0 8px var(--clr-blue1);
-
-    /*underline*/
-    /*border-bottom: 3px solid var(--clr-blue1);*/
-    /*padding-bottom: 2px;*/
 }
 div h3 {
 	color: var(--clr-side-text);
@@ -98,23 +87,21 @@ div h3 {
 }
 .wrapper {
     max-width: 800px;
-    margin: 60px auto 20px; /* Extra top margin for spacing */
+    margin: 60px auto 20px;
     padding: 20px;
     background: var(--clr-bg-section);
     border-radius: 0 10px 10px 10px;
     text-align: left;
     color: white;
     border: 1px solid var(--clr-blue1);
-    position: relative; /* Needed for pseudo-element positioning */
+    position: relative;
 }
-
-/* Folder Tab Effect */
 .wrapper::before {
     content: "";
     position: absolute;
     top: -35.5px;
     left: -1px;
-    width: 200px;
+    width: 220px;
     height: 35px;
     background: var(--clr-bg-section);
 	border: 1px solid var(--clr-blue1);
@@ -122,16 +109,16 @@ div h3 {
     border-top-right-radius: 5px;
 	border-bottom-width: 0;
 }
-
 .wrapper h2 {
     position: absolute;
     top: -30.5px;
-}
-
-/* Make the section titles stand out */
-section h2 {
 	color: var(--clr-side-text);
-    margin-top: 5px; /* Adjust for pseudo-element spacing */
+    margin-top: 5px;
+}
+@media screen and (max-width: 500px) {
+    .wrapper::before {
+        width: 175px;
+    }
 }
 .main-title {
     margin: 20px auto;
@@ -140,25 +127,148 @@ section h2 {
 	color: white;
 }
 
-/*gpt stuff for o nas*/
-/* Styles for the info section */
+/*info section*/
 .info {
     margin-top: 20px;
-    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 .info-item {
-    margin-bottom: 15px; /* Space between the info items */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 15px;
+    /*lighter alternative*/
+    /*background: rgba(255, 255, 255, 0.1);*/
+    background: rgba(3, 20, 57, 0.5);
+    border-radius: 8px;
+    border-left: 4px solid var(--clr-blue1);
 }
-.label {
-    font-weight: bold;
-    font-style: italic;
-    display: block; /* Ensures the label is on its own line */
+.info-label {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: var(--clr-side-text);
+    flex-shrink: 0;
 }
 
-#student-name, #email, #instagram {
-
+@media screen and (max-width: 500px) {
+    .info-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    .info-label {
+        font-size: 12px;
+        padding-bottom: 5px;
+    }
 }
 
-#sources-list {
+/*overview*/
+.overview-text h3 {
+    text-transform: none;
+    background-color: rgba(3, 20, 57, 0.5);
+    padding: 5px 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    border-left: 4px solid var(--clr-blue1);
+    color: var(--clr-side-text);
+    margin-bottom: 10px;
 }
+
+/*diary*/
+.diary-entry {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+}
+.diary-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background: rgba(3, 20, 57, 0.5);
+    border-radius: 8px;
+    border-left: 4px solid var(--clr-blue1);
+}
+.diary-date-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex-shrink: 0;
+    width: 150px;
+}
+.diary-week {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: uppercase;
+    opacity: 0.7;
+    color: var(--clr-side-text);
+    margin-bottom: 5px;
+}
+.diary-content {
+    flex-grow: 1;
+    text-align: right;
+    word-wrap: break-word;
+}
+
+@media screen and (max-width: 810px) {
+    .diary-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    .diary-content {
+        text-align: left;
+    }
+    .diary-week {
+        font-size: 14px;
+    }
+}
+
+/*sources*/
+.source-entry {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 10px;
+}
+.source-item {
+    display: flex;
+    align-items: center;
+    padding: 12px 15px;
+    background: rgba(3, 20, 57, 0.5);
+    border-radius: 8px;
+    border-left: 4px solid var(--clr-blue1);
+}
+.source-index {
+    color: var(--clr-side-text);
+    min-width: 40px;
+    flex-shrink: 0;
+}
+.source-content {
+    flex-grow: 1;
+    text-align: left;
+    color: white;
+    word-wrap: anywhere;
+}
+
+@media screen and (max-width: 810px) {
+    .source-item {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+    .source-content {
+        text-align: left;
+    }
+    .source-index {
+        font-size: 14px;
+        margin-bottom: 5px;
+    }
+}
+
+
+
 

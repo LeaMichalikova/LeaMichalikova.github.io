@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Bachelor's Life</title>
+    <title>Bakalárska práca</title>
     <link rel="stylesheet" href="styles.css">
     <script src="script.js" defer></script>
 </head>
@@ -11,7 +11,7 @@
     <header>
         <nav>
             <ul>
-                <li class="selected"><a href="#about">O nás</a></li>
+                <li class="selected"><a href="#info">Informácie</a></li>
                 <li><a href="#overview">Prehľad</a></li>
                 <li><a href="#diary">Denník</a></li>
                 <li><a href="#work">Práca</a></li>
@@ -25,74 +25,56 @@
             <h3>Bakalárska práca</h3>
             <h1 id="work-title"></h1>
         </div>
-        <section id="about" class="wrapper" data-title="About Me">
-            <h2>O nás</h2>
-<!--            <p><strong>Autor:</strong> <span id="student-name"></span></p>-->
-<!--            <p><strong>Email:</strong> <span id="email"></span></p>-->
-<!--            <p><strong>Názov:</strong> <span id="work-title2"></span></p>-->
-<!--            <p><strong>Školiteľ:</strong> <span id="supervisor-name"></span></p>-->
+        <section id="info" class="wrapper">
+            <h2>Informácie</h2>
             <div class="info">
                 <div class="info-item">
-                    <span class="label">Autor:</span>
-                    <div id="student-name"></div>
+                    <div class="info-label">Autor</div>
+                    <div class="info-content" id="student-name"></div>
                 </div>
                 <div class="info-item">
-                    <span class="label">Email:</span>
-                    <div id="email"></div>
+                    <div class="info-label">Email</div>
+                    <div class="info-content" id="email"></div>
                 </div>
                 <div class="info-item">
-                    <span class="label">Školiteľ:</span>
-                    <div id="supervisor-name"></div>
+                    <div class="info-label">Študijný program</div>
+                    <div class="info-content" id="study-program"></div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Školiteľ</div>
+                    <div class="info-content" id="supervisor-name"></div>
+                </div>
+                <div class="info-item">
+                    <div class="info-label">Akademický rok</div>
+                    <div class="info-content" id="acad-year"></div>
                 </div>
             </div>
         </section>
         
         <section id="overview" class="wrapper">
             <h2>Prehľad</h2>
-            <p>Email: <span id="email2"></span></p>
-            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
-            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
-            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
-            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
-            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
-            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
-            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
+            <div class="overview-text">
+                <h3>Anotácia</h3>
+                <p id="annotation"></p>
+            </div>
+            <div class="overview-text">
+                <h3>Cieľ</h3>
+                <p id="goal"></p>
+            </div>
         </section>
-        
+
         <section id="diary" class="wrapper">
             <h2>Denník</h2>
-            <p id="annotation"></p>
-            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
-            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
-            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
-            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
-            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
-            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
-            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
         </section>
         
         <section id="work" class="wrapper">
             <h2>Práca</h2>
-            <p id="goal"></p>
-            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
-            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
-            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
-            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
-            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
-            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
-            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
+            <p>Tu sa budú nachádzať časti práce.</p>
         </section>
         
         <section id="sources" class="wrapper">
             <h2>Zdroje</h2>
             <div id="sources-list"></div>
-            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
-            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
-            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
-            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
-            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
-            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
-            <p>asdjsaijdisjadajsdoasugduaisgdisau</p>
         </section>
     </main>
 </body>
