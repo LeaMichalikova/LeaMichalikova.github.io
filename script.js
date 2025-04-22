@@ -5,8 +5,8 @@ const workTitle = "Kalibrácia dopravnej kamery pomocou detekcie úbežníkov vo
 const email = "michalikova36@uniba.sk";
 const studyProgram = "Aplikovaná informatika";
 const acadYear = "2024/2025";
-const annotation = "Sem pôjde anotácia práce.";
-const goal = "Sem pôjde cieľ práce."
+const annotation = "Kalibrácia kamery je proces pri ktorom sú určené jej vnútorné a vonkajšie parametre. Vďaka nim je možné následne uvažovať o geometrii zachytenej scény a zisťovať tak priestorové vzťahy objektov na rovine vozovky ako aj ich vzdialenosti."
+const goal = "Spracovať prehľad automatických a semi-automatických metód kalibrácie dopravných kamier. Navrhnúť a experimentálne vyhodnotiť možnosti zlepšenia existujúceho riešenia."
 
 const diaryEntries = [
     { dateRange: "17.2. - 23.2.",
@@ -15,22 +15,20 @@ const diaryEntries = [
         content: "" },
     { dateRange: "3.3. - 9.3.",
         content: "" },
-    { dateRange: "3.3. - 9.3.",
-        content: "" },
     { dateRange: "10.3. - 16.3.",
-        content: "" },
+        content: "Prepojenie vzdialeného prostredia s lokálnym pre jednoduchšie pracovanie s kódom." },
     { dateRange: "17.3. - 23.3.",
         content: "" },
     { dateRange: "24.3. - 30.3.",
-        content: "" },
+        content: "Upravovanie súbora 'preview_heatmap.py' použitím nového modelu tak, aby sa dal spustiť." },
     { dateRange: "31.3. - 6.4.",
-        content: "" },
+        content: "Upravovanie súbora 'preview_heatmap.py' použitím nového modelu tak, aby sa dal spustiť." },
     { dateRange: "7.4. - 13.4.",
-        content: "" },
-    { dateRange: "14.4. - 13.4.",
-        content: "" },
+        content: "Spojazdnenie súboru 'preview_heatmap.py'." },
+    { dateRange: "14.4. - 20.4.",
+        content: "Upravovanie súborov 'detect_bcp.py' a 'detect_bcs.py' použitím nového modelu tak, aby sa dali spustiť." },
     { dateRange: "21.4. - 27.4.",
-        content: "" },
+        content: "Spojazdnenie súborov 'detect_bcp.py' a 'detect_bcs.py'." },
     { dateRange: "28.4. - 4.5.",
         content: "" },
     { dateRange: "5.5. - 11.5.",
@@ -52,9 +50,17 @@ const diaryEntries = [
 ];
 
 const sources = [
-    "Sem pôjde prvý zdroj.",
-    "Sem pôjde druhý zdroj.",
-    "A tak ďalej.",
+    "Kocur V, Ftáčnik M. Traffic Camera Calibration via Vehicle Vanishing Point Detection. InInternational Conference on Artificial Neural Networks 2021 Sep 14 (pp. 628-639). Springer, Cham.",
+    "F. BAÁŠ. Stanovení pozice objektu. PhD thesis, Brno: Vysoké učení technické v Brně. Fakulta elektrotechniky a komunikačních technologií, 2019.",
+    "Surya SC Congress, Anand J Puppala, and Cody L Lundberg. Total system error analysis of uav-crp technology for monitoring transportation infrastructure assets. Engineering Geology, 247:104–116, 2018.",
+    "Pierre Drap and Julien Lefèvre. An exact formula for calculating inverse radial lens distortions. Sensors, 16(6):807, 2016.",
+    "Markéta Dubská and Adam Herout. Real projective plane mapping for detection of orthogonal vanishing points. In BMVC, 2013.",
+    "Markéta Dubská, Adam Herout, and Jakub Sochor. Automatic camera calibration for traffic understanding. In BMVC, 2014.",
+    "Carsten Rother. A new approach to vanishing point detection in architectural environments. Image and Vision Computing, 20(9-10):647–655, 2002.",
+    "Kyung-Seok Seo, Jung-Hwa Lee, and Heung-Moon Choi. An efficient detection of vanishing points using inverted coordinates image space. Pattern Recognition Letters, 27(2):102–108, 2006.",
+    "Jakub Sochor, Jakub Špaňhel, and Adam Herout. Boxcars: Improving fine-grained recognition of vehicles using 3-d bounding boxes in traffic surveillance. IEEE transactions on intelligent transportation systems, 20(1):97–108, 2018.",
+    "H. C. Standage. The Camera Obscura: Its Uses, Action, and Construction, volume IV, pages 67–71. 1885.",
+    "Carlo Tomasi. A simple camera model. Notes from computer science, 527, 2015.",
 ];
 
 // Function to update the content dynamically
