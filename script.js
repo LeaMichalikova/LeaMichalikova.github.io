@@ -27,9 +27,7 @@ window.addEventListener("load",
 
 // Function to update the content dynamically
 function updateContent() {
-    if (!isWindowLoaded || !isDataFetched) {
-        return
-    }
+    if (!isWindowLoaded || !isDataFetched) { return }
 
     document.getElementById('student-name').innerText = json["studentName"];
     document.getElementById('supervisor-name').innerText = json["supervisorName"];

@@ -12,7 +12,10 @@
 	--clr-blue2: #1559F5;
 	--clr-blue3: #0641C8;
 	--clr-blue4: #072D82;
-	--clr-blue5: #031439;	
+	--clr-blue5: #031439;
+
+    --clr-transparent: rgba(3, 20, 57, 0.5);
+    --clr-transparent-darker: rgba(0, 10, 47, 0.5);
 }
 
 html {
@@ -141,7 +144,7 @@ div h3 {
     padding: 12px 15px;
     /*lighter alternative*/
     /*background: rgba(255, 255, 255, 0.1);*/
-    background: rgba(3, 20, 57, 0.5);
+    background: var(--clr-transparent);
     border-radius: 8px;
     border-left: 4px solid var(--clr-blue1);
 }
@@ -167,7 +170,7 @@ div h3 {
 /*overview*/
 .overview-text h3 {
     text-transform: none;
-    background-color: rgba(3, 20, 57, 0.5);
+    background-color: var(--clr-transparent);
     padding: 5px 15px;
     border-radius: 8px;
     margin-top: 10px;
@@ -188,7 +191,7 @@ div h3 {
     justify-content: space-between;
     align-items: center;
     padding: 15px;
-    background: rgba(3, 20, 57, 0.5);
+    background: var(--clr-transparent);
     border-radius: 8px;
     border-left: 4px solid var(--clr-blue1);
 }
@@ -238,7 +241,7 @@ div h3 {
     display: flex;
     align-items: center;
     padding: 12px 15px;
-    background: rgba(3, 20, 57, 0.5);
+    background: var(--clr-transparent);
     border-radius: 8px;
     border-left: 4px solid var(--clr-blue1);
 }

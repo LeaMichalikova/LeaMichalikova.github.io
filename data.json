@@ -3,10 +3,11 @@
   "supervisorName": "Ing. Viktor Kocur, PhD.",
   "workTitle": "Kalibrácia dopravnej kamery pomocou detekcie úbežníkov vozidiel",
   "email": "michalikova36@uniba.sk",
-  "studyProgram": "aplikovaná informatika",
+  "studyProgram": "Aplikovaná Informatika",
   "acadYear": "2024/2025",
   "annotation": "Kalibrácia kamery je proces pri ktorom sú určené jej vnútorné a vonkajšie parametre. Vďaka nim je možné následne uvažovať o geometrii zachytenej scény a zisťovať tak priestorové vzťahy objektov na rovine vozovky ako aj ich vzdialenosti.",
   "goal": "Spracovať prehľad automatických a semi-automatických metód kalibrácie dopravných kamier. Navrhnúť a experimentálne vyhodnotiť možnosti zlepšenia existujúceho riešenia.",
+
   "diaryEntries": [
     {
       "dateRange": "17.2. - 23.2.",
@@ -65,6 +66,7 @@
       "content": "Preloženie bakalárskej práce o rok kvôli nedostatku času na jej dokončenie."
     }
   ],
+
   "sources": [
     "Kocur V, Ftáčnik M. Traffic Camera Calibration via Vehicle Vanishing Point Detection. InInternational Conference on Artificial Neural Networks 2021 Sep 14 (pp. 628-639). Springer, Cham.",
     "F. BAÁŠ. Stanovení pozice objektu. PhD thesis, Brno: Vysoké učení technické v Brně. Fakulta elektrotechniky a komunikačních technologií, 2019.",
