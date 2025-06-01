@@ -1,5 +1,6 @@
 let isWindowLoaded = false;
 let isDataFetched = false;
+let json;
 
 // Function to fetch data from json
 function fetchJSONData() {
@@ -11,12 +12,13 @@ function fetchJSONData() {
             return response.json();
         })
         .then(data => {
+            json = data;
             isDataFetched = true;
             updateContent();
         })
         .catch(error => console.error('Failed to fetch data:', error));
 }
-const json = fetchJSONData();
+fetchJSONData();
 
 window.addEventListener("load",
     () => {
