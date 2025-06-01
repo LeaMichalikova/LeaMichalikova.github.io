@@ -105,10 +105,6 @@ function updateContent() {
     });
 }
 
-// Call the function to update content after the page loads
-window.onload = updateContent;
-// updateContent();
-
 // Corrects view position after clicking on a nav section
 document.querySelectorAll('nav ul li a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
